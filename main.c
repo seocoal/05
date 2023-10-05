@@ -6,17 +6,18 @@
 int main(int argc, char *argv[]) {
 	
 	int a;
-	printf("input integer: ");
+	printf("input an integer: ");
 	
-	scanf("%d", & a);
+	scanf("%d", &a);
 	
-	if (a>0)
-	   printf("Positive \n");
-    else if (a<0)
-	   printf("Negative \n");
-	else
-	   printf("Zero \n");
+	if (a<0)
+	   a=-a;
 	   
-	   	 
-	return 0;
+	printf("The absolute value is %d \n", a);
+	
+
+    return 0;
 }
+
+
+
